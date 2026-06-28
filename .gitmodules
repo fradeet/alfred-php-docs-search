@@ -1,0 +1,3 @@
+[submodule "script/library/AlfredSFType"]
+	path = script/library/AlfredSFType
+	url = git@gist.github.com:008f15019d1bbf99181a96d1ccf3db93.git
