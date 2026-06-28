@@ -27,21 +27,25 @@ function getPHPDocsListAlfred(string $locale): AlfredSF|false
     $docs = requestPHPDocsList($locale);
     if ($docs) {
         $items = [];
-        $docs = json_decode($docs, true);
-        echo $docs[0];
+        $docs = json_decode($docs);
         foreach ($docs as $item) {
             $items[] = new AlfredSFItem(
-                $item->name,
-                // "subtitle" => $item->type . " - " . $item->description,
-                // "arg" =>
-                //     "https://www.php.net/manual/" .
-                //     $locale .
-                //     "/" .
-                //     $item->name .
-                //     ".php",
+                title: $item->name,
+                subtitle: trim(
+                    implode(
+                        " - ",
+                        array_filter([$item->type, $item->description]),
+                    ),
+                ),
+                arg: "https://www.php.net/manual/" .
+                    $locale .
+                    "/" .
+                    $item->id .
+                    ".php",
+                uid: $item->id,
             );
         }
-        return new AlfredSF($items);
+        return new AlfredSF($items, cache: new AlfredSFCache(86400, true));
     }
     return false;
 }

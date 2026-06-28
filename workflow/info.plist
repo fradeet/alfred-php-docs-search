@@ -7,7 +7,21 @@
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>C2499306-079E-4593-9EC8-1543488242D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>52A0CAAC-941E-45AD-88AE-CA8B1711A1A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>fradeet</string>
 	<key>description</key>
@@ -68,11 +82,39 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>52A0CAAC-941E-45AD-88AE-CA8B1711A1A3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>52A0CAAC-941E-45AD-88AE-CA8B1711A1A3</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
 		<key>C2499306-079E-4593-9EC8-1543488242D8</key>
 		<dict>
 			<key>xpos</key>
