@@ -1,4 +1,6 @@
-curl -sG 'https://www.php.net/js/search-index.php' \
+set -o pipefail
+
+curl -fsSG --connect-timeout 10 --max-time 60 'https://www.php.net/js/search-index.php' \
   --data-urlencode "lang=${args[--language]}" |
   if [[ "${args[--output-format]}" == alfred ]]; then
     jq --arg language "${args[--language]}" '
