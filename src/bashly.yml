@@ -20,6 +20,7 @@ commands:
     flags:
       - long: --language
         arg: language
+        allowed: [en, zh, de, es, fr, it, ja, pt_BR, ru, tr, uk]
         default: en
       - long: --output-format
         arg: format
