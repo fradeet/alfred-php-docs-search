@@ -6,5 +6,5 @@ cd "$project_dir"
 
 command -v bashly >/dev/null || { echo 'bashly is required' >&2; exit 1; }
 bashly generate
-install -m 755 "$project_dir/template-cli" "$project_dir/alfred_workflow/template-cli"
-printf 'Updated %s\n' "$project_dir/alfred_workflow/template-cli"
+install -m 755 "$project_dir/php-doc-cli" "$project_dir/alfred_workflow/php-doc-cli"
+printf 'Updated %s\n' "$project_dir/alfred_workflow/php-doc-cli"

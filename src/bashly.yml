@@ -1,4 +1,4 @@
-name: template-cli
+name: php-doc-cli
 help: Example CLI for an Alfred workflow
 version: 0.1.0
 
@@ -12,5 +12,15 @@ flags:
     repeatable: true
 
 commands:
-  - name: hello
-    help: Output a Hello result for Alfred
+  - name: docs-index
+    dependencies:
+      - curl
+    flags:
+      - long: --language
+        arg: language
+        allowed: [en, zh, de, es, fr, it, ja, pt_BR, ru, tr, uk]
+        default: en
+      - long: --output-format
+        arg: format
+        allowed: [json, alfred]
+        default: json
