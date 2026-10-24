@@ -10,7 +10,7 @@ if [[ $alfred_debug ]]; then
     other_args+=(-vv)
 fi
 
-if ! result=$("$workflow_dir/template-cli" "${other_args[@]}" docs-index --output-format alfred); then
+if ! result=$("$workflow_dir/php-doc-cli" "${other_args[@]}" docs-index --output-format alfred); then
   alfred_default_error
   exit 1
 fi

@@ -1,5 +1,5 @@
 /*.alfredworkflow
-/template-cli
+/php-doc-cli
 .DS_Store
-alfred_workflow/template-cli
+alfred_workflow/php-doc-cli
 alfred_workflow/.sync.ffs_db

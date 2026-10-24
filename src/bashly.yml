@@ -1,4 +1,4 @@
-name: template-cli
+name: php-doc-cli
 help: Example CLI for an Alfred workflow
 version: 0.1.0
 
