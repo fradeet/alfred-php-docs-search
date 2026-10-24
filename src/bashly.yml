@@ -14,3 +14,14 @@ flags:
 commands:
   - name: hello
     help: Output a Hello result for Alfred
+  - name: docs-index
+    dependencies:
+      - curl
+    flags:
+      - long: --language
+        arg: language
+        default: en
+      - long: --output-format
+        arg: format
+        allowed: [json, alfred]
+        default: json
